@@ -1,0 +1,38 @@
+*{
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+h1,h2{
+    background-color: black;
+    color: aliceblue;
+}
+.center{
+    text-align: center;
+  margin: 50px;
+  height: 25vh;
+}
+
+.imagen{
+    width: 300px; /* o cualquier otro valor en píxeles, porcentaje, etc. */
+    height: 250px;
+    margin: 0 5px;
+
+}
+
+
+.carrusel{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(max-width:900px){
+    .carrusel{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen{
+        margin-bottom: 10px;
+    }
+}
